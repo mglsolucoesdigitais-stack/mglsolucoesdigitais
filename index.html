@@ -338,8 +338,7 @@ h2{font-family:var(--display);font-weight:800;letter-spacing:-.035em;line-height
 /* ---------- contato ---------- */
 .contact{padding:0 0 100px}
 .contact-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;margin-top:44px}
-.ccard{grid-column:span 2}
-.ccard:nth-child(4),.ccard:nth-child(5){grid-column:span 3}
+.ccard{grid-column:span 3}
 .ccard{display:flex;flex-direction:column;gap:6px;padding:30px 28px;border-radius:20px;
   border:1px solid var(--line);background:rgba(255,255,255,.028);transition:all .3s}
 .ccard:hover{border-color:var(--blue);background:rgba(43,127,255,.07);transform:translateY(-4px)}
@@ -347,11 +346,8 @@ h2{font-family:var(--display);font-weight:800;letter-spacing:-.035em;line-height
 .ccard strong{font-family:var(--display);font-weight:600;font-size:clamp(18px,2.1vw,23px);
   letter-spacing:-.02em;word-break:break-word}
 .ccard em{font-style:normal;font-size:14px;color:#8FA2B6}
-@media(max-width:1000px){.contact-grid{grid-template-columns:repeat(2,1fr)}
-  .ccard,.ccard:nth-child(4),.ccard:nth-child(5){grid-column:span 1}
-  .ccard:nth-child(5){grid-column:span 2}}
 @media(max-width:640px){.contact-grid{grid-template-columns:1fr}
-  .ccard,.ccard:nth-child(4),.ccard:nth-child(5){grid-column:span 1}}
+  .ccard{grid-column:span 1}}
 
 /* ---------- rodapé ---------- */
 footer{border-top:1px solid var(--line);padding:38px 0 46px}
@@ -724,10 +720,7 @@ footer{border-top:1px solid var(--line);padding:38px 0 46px}
         <span>Instagram</span><strong>@mglsolucoesdigitais</strong><em>Bastidores e resultados</em>
       </a>
       <a class="ccard reveal d5" href="mailto:contato@mglsolucoesdigitais.com">
-        <span>E-mail</span><strong>contato@mglsolucoesdigitais.com</strong><em>Propostas e contratos</em>
-      </a>
-      <a class="ccard reveal d6" href="mailto:mglsolucoesdigitais@gmail.com">
-        <span>E-mail</span><strong>mglsolucoesdigitais@gmail.com</strong><em>Arquivos e documentos</em>
+        <span>E-mail</span><strong>contato@mglsolucoesdigitais.com</strong><em>Propostas, contratos e arquivos</em>
       </a>
     </div>
   </div>
